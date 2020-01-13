@@ -462,7 +462,7 @@ a:hover{ color: #42a5f5;}
     float: left;
   }
   #gnav{
-    height: 70vh;
+    height: 100vh;
   }
   #gnav ul li{
     display: block;
