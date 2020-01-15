@@ -1,3 +1,36 @@
+<?php 
+require_once 'database.php';
+try{
+  $pdo = new PDO(
+    'mysql:host='.$db['host'].';dbname='.$db['dbname'].';charset=utf8mb4',
+    $db['user'],
+    $db['pass'],
+    [
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ]
+  );
+
+  $id;$name;$r=[];
+  $stmt=$pdo->prepare('SELECT * FROM '.$db['table'].' ORDER BY id DESC LIMIT 4;');
+  $stmt->execute();
+  foreach($stmt as $k => $v){
+    $id=h($v['id']);
+    $title=h($v['title']);
+    $label=h($v['label']);
+    $date=h($v['date']);
+    $url=h($v['url']);
+    $r[$k]='<li><a href="'.$url.'"><span class="label">'.$label.'</span><span class="date">'.$date.'</span><span class="title">'.$title.'</span></a></li>';
+  }
+
+}catch(PDOException $e){
+  header('Content-Type: text/plain; charset=UTF-8', true, 500);
+  exit($e->getMessage());
+}
+function h($s){
+  return htmlspecialchars($s,ENT_QUOTES,'UTF-8');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,15 +53,14 @@
   <link rel="icon" href="https://character.serenelinux.com/img/icon/64.png" sizes="64x64" type="image/png">
   <title>水瀬玲音/ミナセレネ - SereneLinux公式キャラクター</title>
   <meta property="og:title" content="水瀬玲音 - SereneLinux公式キャラクター">
-  <meta name="description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。SereneLinuxの最新情報を水瀬玲音からお伝えします！">
-  <meta property="og:description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。SereneLinuxの最新情報を水瀬玲音からお伝えします！">
+  <meta name="description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの最新情報をお伝えしていきます！水瀬玲音のTwitterはこちら→【@SereneDevjp】">
+  <meta property="og:description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの最新情報をお伝えしていきます！水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:url" content="https://character.serenelinux.com/">
   <link rel="canonical" href="https://character.serenelinux.com/">
   <meta name="google" content="notranslate">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <input type="checkbox" name="gnav-bin" id="gnav-bin">
   <div id="lap">
     <header id="head">
       <h1><img src="/img/minaserene2.png" alt="水瀬玲音"></h1>
@@ -37,7 +69,7 @@
           <li><a href="/"><span class="en">Top</span><span class="ja">トップ</span></a></li>
           <li><a href="/news/"><span class="en">News</span><span class="ja">ニュース</span></a></li>
           <li><a href="/movie/"><span class="en">Movie</span><span class="ja">ムービー</span></a></li>
-          <li><a href="/link/"><span class="en">Link</span><span class="ja">リンク</span></a></li>
+          <li><a href="/blog/"><span class="en">blog</span><span class="ja">ブログ</span></a></li>
           <li><a href="/contact/"><span class="en">Contact</span><span class="ja">問い合わせ</span></a></li>
         </ul>
       </nav>
@@ -46,41 +78,7 @@
     <article id="news">
       <h1>News</h1>
       <ul>
-        <li><a href="">
-          <span class="label">News</span>
-          <span class="date">2020/01/00</span>
-          <span class="title">水瀬玲音LINE着せ替え発売開始</span>
-        </a></li>
-        <li><a href="https://0e0.pw/1j-4">
-          <span class="label">News</span>
-          <span class="date">2020/1/6</span>
-          <span class="title">水瀬玲音LINEスタンプ売上数500個突破しました！</span>
-        </a></li>
-        <li><a href="https://0e0.pw/dCH-/">
-          <span class="label">News</span>
-          <span class="date">2019/12/25</span>
-          <span class="title">水瀬玲音 LINEスタンプ発売開始</span>
-        </a></li>
-        <li><a href="https://0e0.pw/NZxD">
-          <span class="label">News</span>
-          <span class="date">2019/12/23</span>
-          <span class="title">水瀬玲音が教えるBash講座 パート2 公開</span>
-        </a></li>
-        <li><a href="https://0e0.pw/npOv">
-          <span class="label">News</span>
-          <span class="date">2019/12/14</span>
-          <span class="title">水瀬玲音が教えるBash講座 パート1 公開</span>
-        </a></li>
-        <li><a href="https://0e0.pw/ig9E">
-          <span class="label">News</span>
-          <span class="date">2019/12/13</span>
-          <span class="title">水瀬玲音が教えるBash講座 パート0 公開</span>
-        </a></li>
-        <li><a href="https://0e0.pw/2ls4">
-          <span class="label">News</span>
-          <span class="date">2019/12/04</span>
-          <span class="title">SereneLinux 公式キャラクターを発表</span>
-        </a></li>
+        <?php foreach($r as $v){echo $v;} ?>
       </ul>
       <a class="button" href="/news/">もっと見る</a>
     </article>

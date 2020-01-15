@@ -78,23 +78,26 @@ a:hover{ color: #42a5f5;}
   background-color: #fcfcfc;
   box-shadow: -3px 3px 5px rgba(66, 165, 245, 0.5);
 }
-#visual,#news,#tw{
+#tw{
   box-sizing: border-box;
   width: 90%;
   margin: 0 auto;
   background-color: #fcfcfc;
   box-shadow: -3px 3px 5px rgba(66, 165, 245, 0.5);
 }
-#news,#tw{
+#tw{
+  width: 90%;
+  margin: 0 auto;
+  order: 5;
   padding: 10px;
 }
-#news h1,#tw h1,#banner h1{
+#tw h1{
   font-size: 22px;
   font-family: 'Fredoka One', cursive;
   padding: 10px 0;
   letter-spacing: 5px;
 }
-#news h1::after,#tw h1::after,#banner h1::after{
+#tw h1::after{
   display: block;
   content: "";
   width: 100%;
@@ -103,80 +106,7 @@ a:hover{ color: #42a5f5;}
   border-radius: 1rem;
   background-color: #01579B;
 }
-#news ul{
-  list-style: none;
-  border-top: 1px #01579B solid;
-  border-bottom: 1px #01579B solid;
-}
-#news ul li{
-
-  border-top: 1px #01579B solid;
-  border-bottom: 1px #01579B solid;
-  margin: 3px 0;
-}
-#news ul li a{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px 3px;
-  text-decoration: none;
-  transition: .3s ease;
-}
-#news ul li a:hover{
-  background-color: #72bffd;
-}
-#news ul li a .label{
-  box-sizing: border-box;
-  background-color: #01579B;
-  color: #fcfcfc;
-  border-radius: .5rem;
-  padding: 6px;
-  margin: 3px;
-  height: 29px;
-  font-family: 'Fredoka One', cursive;
-}
-#news ul li a .date{
-  box-sizing: border-box;
-  padding: 6px 0;
-  margin: 3px;
-  height: 29px;
-  color:#01579B;
-  font-family: 'Fredoka One', cursive;
-}
-#news ul li a .title{
-  width: 100%;
-  margin: 3px;
-  color:#01579B
-}
-#news .button{
-  display: block;
-  font-size: 19px;
-  text-align: center;
-  text-decoration: none;
-  padding: 15px 0;
-  background-color: #01579B;
-  color: #fcfcfc;
-  transition: .3s ease;
-  border-radius: 0 0 .5rem .5rem;
-}
-#news .button:hover{
-  background-color: #72bffd;
-  color: #01579B;
-}
-#news,#visual{
-  width: 100%;
-  margin: 0 auto;
-}
-#tw{
-  width: 90%;
-  margin: 0 auto;
-  order: 5;
-}
-#gnav ul li a span::first-letter,
-#news h1::first-letter,#tw h1::first-letter,#banner h1::first-letter{
+#gnav ul li a span::first-letter,#tw h1::first-letter{
   color: #01579B;
 }
 #foot{
@@ -239,20 +169,17 @@ a:hover{ color: #42a5f5;}
   #gnav ul li a .ja{
     font-size: 16px;
   }
-  #banner{
-    width: 240px;
-    top: 410px;
-    float: left;
-    position: absolute;
-  }
-  #visual, #news, #tw{ 
+  #tw{ 
     width: -webkit-calc(100% - 240px);
     width: calc(100% - 240px);
     margin: 0;
     float: right;
   }
-  #tw{
-    margin-bottom: 30px;
+  #banner{
+    width: 240px;
+    top: 410px;
+    float: left;
+    position: absolute;
   }
   #foot{
     clear: both;
@@ -313,15 +240,11 @@ a:hover{ color: #42a5f5;}
     float: left;
     position: absolute;
   }
-  #visual, #news, #tw{ 
+  #tw{ 
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
     margin: 0;
     float: right;
-  }
-  #tw,#news{
-    width: -webkit-calc(100% - 280px);
-    width: calc(100% - 280px);
   }
   #tw{
     margin-bottom: 30px;
@@ -385,6 +308,13 @@ a:hover{ color: #42a5f5;}
   #gnav ul li a .ja{
     font-size: 16px;
   }
+  #tw{
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top:10px;
+  }
   #banner{
     position: absolute;
     width: 300px;
@@ -393,20 +323,6 @@ a:hover{ color: #42a5f5;}
   }#banner img{
     width: 100%;
     margin: 0 0 2.5%;
-  }
-  #visual, #news{ 
-    width: -webkit-calc(100% - 600px);
-    width: calc(100% - 600px);
-    float: left;
-  }#news{
-    margin: 0 0 50px;
-  }
-  #tw{
-    width: 300px;
-    margin: 0;
-    position: absolute;
-    right: 10px;
-    top:10px;
   }
   #foot{
     clear: both;
