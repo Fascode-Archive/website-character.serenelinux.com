@@ -11,7 +11,7 @@ try{
     ]
   );
   $id;$name;$r=[];$start=1;
-  $count=2;
+  $count=5;
   $page=h(explode("/",url())[4]);
   if($page==0) {$page=1;}
   if(is_numeric($page)){
@@ -27,51 +27,7 @@ try{
     $label=h($v['label']);
     $date=h($v['date']);
     $url=h($v['url']);
-    $r[$k]='<li><a href="'.$url.'"><picture>
-    <source type="image/webp" sizes="(max-width: 1080px) 100vw, 1080px"
-    srcset="
-    /img/visual/news/'.$id.'/w220.png.webp 220w,
-    /img/visual/news/'.$id.'/w250.png.webp 250w,
-    /img/visual/news/'.$id.'/w300.png.webp 300w,
-    /img/visual/news/'.$id.'/w350.png.webp 350w,
-    /img/visual/news/'.$id.'/w400.png.webp 400w,
-    /img/visual/news/'.$id.'/w450.png.webp 450w,
-    /img/visual/news/'.$id.'/w500.png.webp 500w,
-    /img/visual/news/'.$id.'/w550.png.webp 550w,
-    /img/visual/news/'.$id.'/w600.png.webp 600w,
-    /img/visual/news/'.$id.'/w650.png.webp 650w,
-    /img/visual/news/'.$id.'/w700.png.webp 700w,
-    /img/visual/news/'.$id.'/w750.png.webp 750w,
-    /img/visual/news/'.$id.'/w800.png.webp 800w,
-    /img/visual/news/'.$id.'/w850.png.webp 850w,
-    /img/visual/news/'.$id.'/w900.png.webp 900w,
-    /img/visual/news/'.$id.'/w950.png.webp 950w,
-    /img/visual/news/'.$id.'/w1000.png.webp 1000w,
-    /img/visual/news/'.$id.'/w1080.png.webp 1080w">
-    <img
-    sizes="(max-width: 1080px) 100vw, 1080px"
-    srcset="
-    /img/visual/news/'.$id.'/w220.png 220w,
-    /img/visual/news/'.$id.'/w250.png 250w,
-    /img/visual/news/'.$id.'/w300.png 300w,
-    /img/visual/news/'.$id.'/w350.png 350w,
-    /img/visual/news/'.$id.'/w400.png 400w,
-    /img/visual/news/'.$id.'/w450.png 450w,
-    /img/visual/news/'.$id.'/w500.png 500w,
-    /img/visual/news/'.$id.'/w550.png 550w,
-    /img/visual/news/'.$id.'/w600.png 600w,
-    /img/visual/news/'.$id.'/w650.png 650w,
-    /img/visual/news/'.$id.'/w700.png 700w,
-    /img/visual/news/'.$id.'/w750.png 750w,
-    /img/visual/news/'.$id.'/w800.png 800w,
-    /img/visual/news/'.$id.'/w850.png 850w,
-    /img/visual/news/'.$id.'/w900.png 900w,
-    /img/visual/news/'.$id.'/w950.png 950w,
-    /img/visual/news/'.$id.'/w1000.png 1000w,
-    /img/visual/news/'.$id.'/w1080.png 1080w"
-    src="/img/visual/news/'.$id.'/w230.png"
-    alt="">
-  </picture><div><span class="label">'.$label.'</span><span class="date">'.$date.'</span><span class="title">'.$title.'</span></div></a></li>';
+    $r[$k]='<li><a href="'.$url.'"><span class="label">'.$label.'</span><span class="date">'.$date.'</span><span class="title">'.$title.'</span></a></li>';
   }
   $stmt=$pdo->query('select count(*) from '.$db['table'].';');
   $allcount=ceil($stmt->fetchColumn()/$count);
@@ -178,6 +134,8 @@ function url(){
       </nav>
     </header>
 
+    <img id="visual" src="/img/visual/visual.png" alt="ミナセレネ">
+    
     <article id="news">
       <h1>News</h1>
       <ul class="news-main">
@@ -187,6 +145,8 @@ function url(){
         <?=$newsnav?>
       </ul>
     </article>
+    
+
     <aside id="tw">
       <h1>Twitter <a href="https://twitter.com/serenedevjp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">フォローする</a></h1>
       <div>

@@ -90,14 +90,22 @@ a:hover{ color: #42a5f5;}
   margin: 0 auto;
   order: 5;
   padding: 10px;
+}#visual{
+  width: 100%;
+  margin: 0 auto;
 }
-#tw h1{
+#tw h1,
+#news h1,
+#movie h1{
   font-size: 22px;
   font-family: 'Fredoka One', cursive;
   padding: 10px 0;
   letter-spacing: 5px;
+  font-weight: 400;
 }
-#tw h1::after{
+#tw h1::after,
+#news h1::after,
+#movie h1::after{
   display: block;
   content: "";
   width: 100%;
@@ -106,7 +114,7 @@ a:hover{ color: #42a5f5;}
   border-radius: 1rem;
   background-color: #01579B;
 }
-#gnav ul li a span::first-letter,#tw h1::first-letter{
+#gnav ul li a span::first-letter,#tw h1::first-letter,#news h1::first-letter,#movie h1::first-letter{
   color: #01579B;
 }
 #foot{
@@ -169,11 +177,18 @@ a:hover{ color: #42a5f5;}
   #gnav ul li a .ja{
     font-size: 16px;
   }
+  #visual{ 
+    width: -webkit-calc(100% - 240px);
+    width: calc(100% - 240px);
+    margin: 0;
+    float: right;
+  }
   #tw{ 
     width: -webkit-calc(100% - 240px);
     width: calc(100% - 240px);
     margin: 0;
     float: right;
+    margin-bottom: 30px;
   }
   #banner{
     width: 240px;
@@ -245,9 +260,13 @@ a:hover{ color: #42a5f5;}
     width: calc(100% - 280px);
     margin: 0;
     float: right;
-  }
-  #tw{
     margin-bottom: 30px;
+  }
+  #visual{ 
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
+    margin: 0;
+    float: right;
   }
   #foot{
     clear: both;
@@ -314,6 +333,10 @@ a:hover{ color: #42a5f5;}
     position: absolute;
     right: 10px;
     top:10px;
+  }#visual{ 
+    width: -webkit-calc(100% - 600px);
+    width: calc(100% - 600px);
+    float: left;
   }
   #banner{
     position: absolute;

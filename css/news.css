@@ -3,13 +3,17 @@
 
 #news{
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: #fcfcfc;
     box-shadow: -3px 3px 5px rgba(66, 165, 245, 0.5);
-}
-#news{
   padding: 10px;
+}
+#news .news-main img{
+  display: block;
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
 }
 
 #news .news-main{
@@ -23,7 +27,7 @@ border-top: 1px #01579B solid;
 border-bottom: 1px #01579B solid;
 margin: 3px 0;
 }
-#news .news-main li a div{
+#news .news-main li a{
 display: flex;
 flex-flow: row wrap;
 justify-content: flex-start;
@@ -34,10 +38,10 @@ padding: 10px 3px;
 text-decoration: none;
 transition: .3s ease;
 }
-#news .news-main li a div:hover{
+#news .news-main li a:hover{
 background-color: #72bffd;
 }
-#news .news-main li a div .label{
+#news .news-main li a .label{
 box-sizing: border-box;
 background-color: #01579B;
 color: #fcfcfc;
@@ -47,7 +51,7 @@ margin: 3px;
 height: 29px;
 font-family: 'Fredoka One', cursive;
 }
-#news .news-main li a div .date{
+#news .news-main li a .date{
 box-sizing: border-box;
 padding: 6px 0;
 margin: 3px;
@@ -55,16 +59,32 @@ height: 29px;
 color:#01579B;
 font-family: 'Fredoka One', cursive;
 }
-#news .news-main li a div .title{
+#news .news-main li a .title{
 width: 100%;
 margin: 3px;
 color:#01579B
 }
-#news{
-  width: 100%;
-  margin: 0 auto;
+#news .news-nav{
+  display: block;
+  font-size: 0;
+  text-align: center;
 }
-
+#news .news-nav li{
+  display: inline-block;
+}
+#news .news-nav li a{
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  color: #fcfcfc;
+  background-color: #01579B;
+  transition: .3s ease;
+  text-decoration: none;
+}
+#news .news-nav li a:hover{
+background-color: #72bffd;
+}
 @media screen and (min-width:480px) and (max-width:599px) { 
 
 }
@@ -83,10 +103,25 @@ color:#01579B
 /* 960px〜1279px：小型PC
 ------------------------------ */
 @media screen and (min-width:960px) and (max-width:1279px) {
-
+  #news { 
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
+    margin: 0;
+    float: right;
+  }
+  #news{
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
+  }
 }
 /* 1280px〜：大型PC
 ------------------------------ */
 @media screen and (min-width:1280px) {
-
+  #news{ 
+    width: -webkit-calc(100% - 600px);
+    width: calc(100% - 600px);
+    float: left;
+  }#news{
+    margin: 0 0 50px;
+  }
 }
