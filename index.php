@@ -63,28 +63,28 @@ function h($s){
 <body>
   <div id="lap">
     <header id="head">
-      <h1>
+
+    <h1>
     <picture>
-    <img
-    sizes="(max-width: 1080px) 100vw, 1080px"
-    srcset="
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_220.png 220w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_320.png 320w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_404.png 404w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_478.png 478w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_547.png 547w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_610.png 610w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_670.png 670w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_726.png 726w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_783.png 783w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_834.png 834w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_886.png 886w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_940.png 940w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_986.png 986w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_1038.png 1038w,
-    /img/visual/1920x1080px_ryzxhg_c_scale,w_1080.png 1080w"
-    src="/img/visual/1920x1080px_ryzxhg_c_scale,w_1080.png"
-    alt="水瀬玲音公式ウェブサイト">
+      <img
+      sizes="(max-width: 1080px) 100vw, 1080px"
+      srcset="
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_200.png 200w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_310.png 310w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_402.png 402w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_484.png 484w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_557.png 557w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_626.png 626w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_691.png 691w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_752.png 752w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_812.png 812w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_868.png 868w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_925.png 925w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_978.png 978w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_1029.png 1029w,
+      /img/visual/touka_1920x1080px_akss8t_c_scale,w_1080.png 1080w"
+      src="/img/visual/touka_1920x1080px_akss8t_c_scale,w_1080.png"
+      alt="水瀬玲音公式ウェブサイト">
     </picture></h1>
       <nav id="gnav">
         <ul>
@@ -114,9 +114,10 @@ function h($s){
       </div>
     </aside>
     <aside id="banner">
-      <a href="https://store.line.me/stickershop/author/1184485"><img src="/img/back/bana-1.png" alt=""></a>
-      <a href="https://serenelinux.booth.pm/"><img src="/img/back/bana-2.png" alt=""></a>
-      <a href=""><img src="/img/back/bana-3.png" alt=""></a>
+      <a href="https://store.line.me/stickershop/author/1184485"><img src="/img/back/bana-1.png" alt="LINEスタンプ好評発売中"></a>
+      <a href="https://serenelinux.booth.pm/"><img src="/img/back/bana-2.png" alt="水瀬玲音グッツ販売はこちら"></a>
+      <a href="https://store.line.me/themeshop/product/54a87484-0815-4bb5-8dfa-e0f33c228af2"><img src="/img/back/bana-3.png" alt="LINE着せ替え販売開始"></a>
+      <a href="https://serenelinux.com/download/standard/beta7/"><img src="/img/back/45uwzt1whjg8fkg7rywejfwhnr-1920x1080_havyod_c_scale,w_708.png" alt="SereneLinux Bata7"></a>
     </aside>
   </div>
   <footer id="foot"><small>&copy; 2020 SereneLinux</small></footer>
