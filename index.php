@@ -52,7 +52,7 @@ function h($s){
   <link rel="icon" href="https://character.serenelinux.com/img/icon/48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="https://character.serenelinux.com/img/icon/64.png" sizes="64x64" type="image/png">
   <title>水瀬玲音/ミナセレネ - SereneLinux公式キャラクター</title>
-  <meta property="og:title" content="水瀬玲音 - SereneLinux公式キャラクター">
+  <meta property="og:title" content="水瀬玲音/ミナセレネ - SereneLinux公式キャラクター">
   <meta name="description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの最新情報をお伝えしていきます！水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:description" content="SereneLinux公式キャラクター水瀬玲音の公式ウェブサイトです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの最新情報をお伝えしていきます！水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:url" content="https://character.serenelinux.com/">

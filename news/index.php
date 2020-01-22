@@ -110,7 +110,7 @@ function url(){
   <link rel="icon" href="https://character.serenelinux.com/img/icon/48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="https://character.serenelinux.com/img/icon/64.png" sizes="64x64" type="image/png">
   <title>News <?=$page?>ページ | 水瀬玲音/ミナセレネ - SereneLinux公式キャラクター</title>
-  <meta property="og:title" content="News <?=$page?>ページ | 水瀬玲音 - SereneLinux公式キャラクター">
+  <meta property="og:title" content="News <?=$page?>ページ | 水瀬玲音/ミナセレネ - SereneLinux公式キャラクター">
   <meta name="description" content="こちらは水瀬玲音の公式ウェブサイトのNewsページです。水瀬玲音の最新情報をまとめたページです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの情報がのっています。水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:description" content="こちらは水瀬玲音の公式ウェブサイトのNewsページです。水瀬玲音の最新情報をまとめたページです。水瀬玲音のグッツ、Booth、LINEスタンプ、LINE着せ替え、Bash講座などの情報がのっています。水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:url" content="https://character.serenelinux.com/news/<?=$page?>">

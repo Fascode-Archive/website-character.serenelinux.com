@@ -271,8 +271,8 @@ a:hover{ color: #42a5f5;}
   #visual{ 
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
-    margin: 0;
     float: right;
+    margin: 0 auto;
   }
   #foot{
     clear: both;
@@ -343,6 +343,7 @@ a:hover{ color: #42a5f5;}
     width: -webkit-calc(100% - 600px);
     width: calc(100% - 600px);
     float: left;
+    margin: 0 auto;
   }
   #banner{
     position: absolute;

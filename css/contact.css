@@ -1,0 +1,58 @@
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font: inherit;
+  outline: none;
+  width: 99%;
+  padding: 5px;
+  margin: 1%;
+  margin-bottom: 20px;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+select::-ms-expand {
+  display: none;
+}
+.contact form{
+  max-width: 960px;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.contact label{
+  margin-left: 10px;
+}
+.contact input[type='button']{
+  font-size: 19px;
+  padding: 10px;
+}
+.contact input[type='button']:hover{
+  background-color: #333;
+  color: #eee;
+}
+.thanks{
+  display: none;
+  text-align: center;
+  line-height: 25px;
+  margin: 25vh 0;
+}

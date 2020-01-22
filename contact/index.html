@@ -18,15 +18,16 @@
   <link rel="icon" href="https://character.serenelinux.com/img/icon/32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="https://character.serenelinux.com/img/icon/48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="https://character.serenelinux.com/img/icon/64.png" sizes="64x64" type="image/png">
-  <title>Movie | 水瀬玲音/ミナセレネ - SereneLinux公式キャラクター</title>
-  <meta property="og:title" content="Movie | 水瀬玲音 - SereneLinux公式キャラクター">
-  <meta name="description" content="こちらは水瀬玲音の公式ウェブサイトのMovieページです。水瀬玲音のいろいろな動画やBash講座などの情報がのっています。水瀬玲音のTwitterはこちら→【@SereneDevjp】">
-  <meta property="og:description" content="こちらは水瀬玲音の公式ウェブサイトのMovieページです。水瀬玲音のいろいろな動画やBash講座などの情報がのっています。水瀬玲音のTwitterはこちら→【@SereneDevjp】">
+  <title>Contact | 水瀬玲音/ミナセレネ - SereneLinux公式キャラクター</title>
+  <meta property="og:title" content="Contact | 水瀬玲音/ミナセレネ - SereneLinux公式キャラクター">
+  <meta name="description" content="水瀬玲音に関するお問い合わせはこのページから行うことができます。ご返信に１日から１０日ほどかかる場合がございます。予めご了承ください水瀬玲音のTwitterはこちら→【@SereneDevjp】">
+  <meta property="og:description" content="水瀬玲音に関するお問い合わせはこのページから行うことができます。ご返信に１日から１０日ほどかかる場合がございます。予めご了承ください水瀬玲音のTwitterはこちら→【@SereneDevjp】">
   <meta property="og:url" content="https://character.serenelinux.com/movie/">
   <link rel="canonical" href="https://character.serenelinux.com/movie/">
   <meta name="google" content="notranslate">
   <link rel="stylesheet" href="/css/default.css">
-  <link rel="stylesheet" href="/css/movie.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
   <div id="lap">
@@ -84,5 +85,34 @@
   </div>
   <footer id="foot"><small>&copy; 2020 SereneLinux</small></footer>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    $(function(){
+    $('#ajax').on('click',function(){
+    $.ajax({
+    url:'/contact/q.php',
+    type:'POST',
+    data:{
+    'mail':$('#f_email').val(),
+    'name':$('#f_name').val(),
+    'title':$('#f_title').val(),
+    'content':$('#f_content').val()
+    }
+    })
+    .done( (data) => {
+    if (data==="OK") {
+    $('#form').slideUp(500);
+    $('.thanks').slideDown(500);
+    }else{
+    }
+    })
+    .fail( (data) => {
+    $('#form').slideDown(500);
+    $('.thanks').slideUp(500);
+    })
+    .always( (data) => {
+    });
+    });
+    });
+    </script>
 </body>
 </html>
