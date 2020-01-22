@@ -84,9 +84,8 @@ a:hover{ color: #42a5f5;}
   margin: 0 auto;
   background-color: #fcfcfc;
   box-shadow: -3px 3px 5px rgba(66, 165, 245, 0.5);
-}
-#news,#tw{
-  padding: 10px;
+  order: 5;
+  padding: 10px 20px;
 }
 #news h1,#tw h1,#banner h1{
   font-size: 22px;
@@ -166,7 +165,7 @@ a:hover{ color: #42a5f5;}
   background-color: #72bffd;
   color: #01579B;
 }
-#news,#visual{
+#visual{
   width: 100%;
   margin: 0 auto;
 }
@@ -389,24 +388,17 @@ a:hover{ color: #42a5f5;}
     position: absolute;
     width: 300px;
     right: 10px;
-    top:295px;
+    top:10px;
   }#banner img{
     width: 100%;
     margin: 0 0 2.5%;
   }
-  #visual, #news{ 
+  #visual, #news,#tw{ 
     width: -webkit-calc(100% - 600px);
     width: calc(100% - 600px);
     float: left;
-  }#news{
+  }#tw{
     margin: 0 0 50px;
-  }
-  #tw{
-    width: 300px;
-    margin: 0;
-    position: absolute;
-    right: 10px;
-    top:10px;
   }
   #foot{
     clear: both;

@@ -85,10 +85,6 @@ a:hover{ color: #42a5f5;}
   margin: 10px auto 0;
   background-color: #fcfcfc;
   box-shadow: -3px 3px 5px rgba(66, 165, 245, 0.5);
-}
-#tw{
-  width: 90%;
-  margin: 0 auto;
   order: 5;
   padding: 10px 20px;
 }#visual{
@@ -97,7 +93,8 @@ a:hover{ color: #42a5f5;}
 }
 #tw h1,
 #news h1,
-#movie h1{
+#movie h1,
+#contact h1{
   font-size: 22px;
   font-family: 'Fredoka One', cursive;
   padding: 10px 0;
@@ -106,7 +103,8 @@ a:hover{ color: #42a5f5;}
 }
 #tw h1::after,
 #news h1::after,
-#movie h1::after{
+#movie h1::after,
+#contact h1::after{
   display: block;
   content: "";
   width: 100%;
@@ -332,14 +330,7 @@ a:hover{ color: #42a5f5;}
   }
   #gnav ul li a .ja{
     font-size: 16px;
-  }
-  #tw{
-    width: 300px;
-    margin: 0;
-    position: absolute;
-    right: 10px;
-    top:10px;
-  }#visual,#movie,#contact,#news{ 
+  }#visual,#movie,#contact,#news,#tw{ 
     width: -webkit-calc(100% - 600px);
     width: calc(100% - 600px);
     float: left;
@@ -349,7 +340,7 @@ a:hover{ color: #42a5f5;}
     position: absolute;
     width: 300px;
     right: 10px;
-    top:295px;
+    top:20px;
   }#banner img{
     width: 100%;
     margin: 0 0 2.5%;

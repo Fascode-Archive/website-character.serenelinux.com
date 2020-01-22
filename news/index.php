@@ -122,7 +122,29 @@ function url(){
 <body>
   <div id="lap">
     <header id="head">
-      <h1><img src="/img/minaserene2.png" alt="水瀬玲音"></h1>
+      <h1>
+    <picture>
+    <img
+    sizes="(max-width: 1080px) 100vw, 1080px"
+    srcset="
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_220.png 220w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_320.png 320w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_404.png 404w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_478.png 478w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_547.png 547w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_610.png 610w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_670.png 670w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_726.png 726w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_783.png 783w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_834.png 834w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_886.png 886w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_940.png 940w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_986.png 986w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_1038.png 1038w,
+    /img/visual/1920x1080px_ryzxhg_c_scale,w_1080.png 1080w"
+    src="/img/visual/1920x1080px_ryzxhg_c_scale,w_1080.png"
+    alt="水瀬玲音公式ウェブサイト">
+    </picture></h1>
       <nav id="gnav">
         <ul>
           <li><a href="/"><span class="en">Top</span><span class="ja">トップ</span></a></li>
@@ -134,7 +156,6 @@ function url(){
       </nav>
     </header>
 
-    <img id="visual" src="/img/visual/visual.png" alt="ミナセレネ">
     
     <article id="news">
       <h1>News</h1>
@@ -153,7 +174,7 @@ function url(){
         <a class="twitter-timeline"
         data-lang="ja" data-theme="white"
         data-link-color="#01579B"
-        data-chrome="noheader nofooter noborders noscrollbar transparent" height="200px"
+        data-chrome="noheader nofooter noborders noscrollbar transparent" height="400px"
         href="https://twitter.com/serenedevjp"></a>
       </div>
     </aside>
