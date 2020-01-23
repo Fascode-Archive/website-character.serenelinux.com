@@ -67,7 +67,8 @@ a:hover{ color: #42a5f5;}
 }
 #banner{
   width: 100%;
-  top: 450px;
+  top: 460px;
+  order: 9;
 }
 #banner img{
   display: block;
