@@ -95,12 +95,12 @@ function url(){
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="photo">
   <meta name="twitter:site" content="@serenedevjp">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="artcle">
   <meta property="og:site_name" contet="character.serenelinux.com">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:image" content="https://character.serenelinux.com/img/icon/150.png">
+  <meta property="og:image" content="https://character.serenelinux.com/img/visual/touka_1920x1080px.png">
   <link rel="apple-touch-icon-precomposed" href="https://character.serenelinux.com/img/icon/150.png">
   <meta name="msapplication-TileImage" content="https://character.serenelinux.com/img/icon/150.png">
   <meta name="msapplication-TileColor" content="#ffffff">
